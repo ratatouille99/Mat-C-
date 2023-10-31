@@ -640,6 +640,13 @@ int gauss(int n) {
     return (n * (n + 1)) / 2;
 }
 ```
+#### Quicksort
+```cpp
+int gcd(int a, int b) {
+    if(b == 0) return a;
+    return gcd(b, a % b);
+}
+```
 #### Maximo comun divisor
 
 ```cpp
