@@ -648,3 +648,19 @@ int gcd(int a, int b) {
     return gcd(b, a % b);
 }
 ```
+#Fibonacci Prog. Dinamica
+```cpp
+int FibDinamico(int n){
+    vector<int>dinamico(n+1 , 0);
+
+    dinamico[0] = 0;
+    dinamico[1] = 1;
+
+    for(int i = 2; i < n; i++){
+        dinamico[i] = dinamico[i-1] + dinamico[i-2];
+    }
+
+    return dinamico[n];
+}
+```
+
